@@ -17,19 +17,12 @@ void Solution::input(){
 }
 
 void Solution::result(){
-    int next{1};
-    int result{1};
+    int result{0};
     if(n_ > 0){
-        while (next != n_)
-        {
-            result = result + ++next;
-        }
+        result = n_ * (n_ + 1) / 2;
     }
     else{
-        while (next != n_)
-        {
-            result = result + --next;
-        }
+        result = 1 + n_ * (-n_ + 1) / 2;
     }
     std::cout << result;
 }
