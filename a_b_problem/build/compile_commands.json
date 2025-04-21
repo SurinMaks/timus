@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/surinmm/Projects/timus/a_b_problem/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/abproblem.dir/main.cpp.o -c /home/surinmm/Projects/timus/a_b_problem/main.cpp",
-  "file": "/home/surinmm/Projects/timus/a_b_problem/main.cpp",
-  "output": "CMakeFiles/abproblem.dir/main.cpp.o"
-}
-]
