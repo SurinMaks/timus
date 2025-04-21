@@ -12,7 +12,6 @@ public:
     ~Solution() = default;
     void input();
     void result();
-    void print();
 };
 
 void Solution::input(){
