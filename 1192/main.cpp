@@ -1,8 +1,21 @@
 #include <iostream>
 #include <cmath>
-#include <iomanip> 
+#include <iomanip>
+
+namespace ISolution{
+    class ISolution
+    {
+        public:
+        void virtual input() = 0;
+        void virtual result() = 0;
+        virtual ~ISolution() = default;
+    };
+}
+
+
+
 namespace ex1192{
-    class Solution
+    class Solution : public ISolution::ISolution
     {
     private:
         int V_{0}, a_deg_{0};
@@ -10,11 +23,11 @@ namespace ex1192{
         const double g_ = 10.0;
         const double pi_ = 3.1415926535;
     public:
-        void input();
-        void result();
+        void input() override;
+        void result() override;
     };
 
-    void Solution::input(){
+    void Solution::input() {
         std::cin >> V_ >> a_deg_ >> K_;
     }
 
