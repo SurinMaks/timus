@@ -1,7 +1,9 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-
+/**
+ * @brief Adstract class
+ */
 namespace ISolution{
     class ISolution
     {
@@ -11,8 +13,6 @@ namespace ISolution{
         virtual ~ISolution() = default;
     };
 }
-
-
 
 namespace ex1192{
     class Solution : public ISolution::ISolution
