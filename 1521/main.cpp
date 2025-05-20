@@ -1,9 +1,11 @@
 #include <iostream>
 
-/**
- * @brief Adstract class
- */
+
 namespace ISolution{
+
+    /**
+    * @brief Adstract class
+    */
     class ISolution
     {
         public:
@@ -17,10 +19,15 @@ namespace ex1521{
     class Solution : ISolution::ISolution
     {
         private:
+            int N_{0}, K_{0};
         public:
             void input() override;
             void result() override;
     };
+
+    void Solution::input(){
+        std::cin >> N_ >> K_;
+    }
 }
 
 int main(int, char**){
